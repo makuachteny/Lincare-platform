@@ -1,0 +1,8 @@
+Custom style for moving content to the left */
+body {
+    background-color: #F3E9F6;
+}
+
+.dc {
+    float: left;    
+}
