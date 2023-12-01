@@ -10,297 +10,356 @@
             crossorigin="anonymous" />
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="style.css/" />
-        <title>LinkCare Platform</title>
+        <link rel="stylesheet" href="/style.css" />
+    
 
         <!-- Bootstrap icons -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+        <!-- Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&family=Montserrat:wght@100&family=Roboto+Condensed:wght@100&display=swap"
+            rel="stylesheet">
+
+        <!-- title -->
+        <title>LinkCare Platform</title>
+
+        <!-- favicon -->
+        <link rel="icon" href="/images/favicon/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+
     </head>
 
     <body>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+        <!-- HEADER SECTION -->
+        <header>
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+                <div class="container">
+                    <a href="#" class="navbar-brand ">LinkCare Health Services</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navmenu">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a href="/src/specialty.html" class="nav-link">Specialty</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/src/medication.html" class="nav-link">Medication</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/src/symptom.html" class="nav-link">Symptom</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/src/service.html" class="nav-link">Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/src/life_situation.html" class="nav-link">Life situation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/src/login.html" class="nav-link d-flex"><i
+                                        class="bi-person pe-2"></i>Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- MAIN SECTION -->
+        <main>
+            <!-- Hero section -->
+            <section class="custom-section bg-image bg-cover text-center justify-content-center">
+                <div class="container-fluid d-md-flex pt-2">
+                    <div class="card text-center  mt-5 pb-5">
+                        <div class="card-body m-lg-5">
+                            <h2 class="card-title pt-sm-4 fw-bold">Explore Affordable Healthcare Services</h2>
+                            <p class="card-text">Doctor Appointments Starting from just $29</p>
+                            <p class="card-text">Discover the most affordable prices for top-tier healthcare
+                                professionals.
+                                Schedule
+                                an appointment easily.</p>
+
+                            <div class="input-group mb-3 p-3">
+                                <input type="text" class="form-control" placeholder="Search for healthcare services..."
+                                    aria-label="Search" aria-describedby="button-addon2" />
+                                <button class="btn-outline-secondary" type="button" id=" button-addon2">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </div>
+
+                            <p class="card-text ">Search by symptom, service, doctor name, specialty, or
+                                medication...
+                            </p>
+                        </div>
+                        <a href="/src/specialty.html#doctors-section"><button class="btn btn-danger mx-auto mb-3 p-3"> I NEED TO SEE A DOCTOR
+                            URGENTLY</button></a>
+                        <a href="/src/medication.html"><button class="btn btn-primary mx-auto mb-4 p-3">I NEED A PRESCRIPTION
+                            REFILL</button> </a>
+                    </div>
+                </div>
+                <div class=" advert card-body justify-content-center ">
+                    <p class="card-text text-center">
+                        <i class="bi bi-trophy"></i> Named the Best Overall Telehealth by Healthline
+                    </p>
+                </div>
+            </section>
+
+
+            <!-- Services -->
+            <section class=" services bg-light py-5">
+                <div class="container">
+                    <h2 class="text-center mb-4">Top-rated online doctors & specialists available now.</h2>
+                    <p class="text-center mb-4">Choose from thousands of providers at everyday affordable prices. Book
+                        online today.
+                    </p>
+
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title mb-3">TOP BOOKED</h3>
+                                    <p class="card-text">Find our most popular doctors and specialists.</p>
+                                </div>
+                                <div class="d-flex justify-content-between p-2">
+                                    <i class="bi bi-chevron-right"></i>
+                                    <i class="bi-bookmark-check"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title mb-3">SPECIALTIES</h3>
+                                    <p class="card-text">Explore a variety of medical specialties.</p>
+                                </div>
+                                <div class="d-flex justify-content-between p-2">
+                                    <i class="bi bi-chevron-right"></i>
+                                    <i class="bi-person"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title mb-3">SYMPTOMS</h3>
+                                    <p class="card-text">Get expert advice based on your symptoms.</p>
+                                </div>
+                                <div class="d-flex justify-content-between p-2">
+                                    <i class="bi bi-chevron-right"></i>
+                                    <i class="bi-thermometer-half"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4 text-center">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Telehealth</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Video prescription refill</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">In-person doctor visit</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">UTI consult</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Add more service categories as needed -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Doctors -->
+            <section class="doctors py-5">
+                <div class="container">
+                    <h1 class="mb-4">Connect with our most able Doctors:</h1>
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card doctor-card">
+                                <img src="images/D4.png" alt="Dr. John Doe" class="card-img-top img-fluid mb-3">
+                                <div class="card-body">
+                                    <h4 class="card-title">Dr. Ben Carson</h4>
+                                    <p class="card-text">Cardiologist</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card doctor-card">
+                                <img src="images/D1.png" alt="Dr. Jane Smith" class="card-img-top img-fluid mb-3">
+                                <div class="card-body">
+                                    <h4 class="card-title">Dr. Jane Smith</h4>
+                                    <p class="card-text">Orthopedic Surgeon</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card doctor-card">
+                                <img src="images/D2.jpg" alt="Dr. Mike Joss" class="card-img-top img-fluid mb-3">
+                                <div class="card-body">
+                                    <h4 class="card-title">Dr. Mike Joss</h4>
+                                    <p class="card-text">Pediatrician</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card doctor-card">
+                                <img src="images/D3.jpg" alt="Dr. Sarah Dina" class="card-img-top img-fluid mb-3">
+                                <div class="card-body">
+                                    <h4 class="card-title">Dr. Sarah Dina</h4>
+                                    <p class="card-text">Dermatologist</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Subscription section -->
+            <section class="bg-light py-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <h2 class="text-center mb-4">Sign up to save 20% on your first visit.</h2>
+                            <p class="text-center mb-4">Plus get access to exclusive sales and promotions.</p>
+
+                            <form>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="email"
+                                        placeholder="Enter your email address" required>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Sign Up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Comments sections -->
+            <section class="py-5">
+                <div class="container d-block">
+                    <h2 class="text-center mb-4">PATIENTS LOVE LINKCARE</h2>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <blockquote class="blockquote">
+                                <p class="mb-0">The doctor I booked on Linkcare was so great! She asked lots of
+                                    questions
+                                    and
+                                    listened
+                                    carefully to me.</p>
+                                <footer class="blockquote-footer py-4">Andrea</footer>
+                            </blockquote>
+                        </div>
+
+                        <div class="col-md-6">
+                            <blockquote class="blockquote">
+                                <p class="mb-0">I don’t have insurance and couldn't risk paying hundreds for a bill.
+                                    Knowing
+                                    how
+                                    much to pay upfront meant I could actually afford my doctor on Sesame.</p>
+                                <footer class="blockquote-footer py-4">Kat</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <blockquote class="blockquote">
+                                <p class="mb-0">The doctor showed up on time, listened to me, and didn’t make me wait.
+                                    As
+                                    someone
+                                    without insurance, Linkcare was really great.</p>
+                                <footer class="blockquote-footer py-4">Dominic</footer>
+                            </blockquote>
+                        </div>
+
+                        <!-- Add more testimonials as needed -->
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+
+        <footer class="bg-dark text-light py-4">
             <div class="container">
-                <a href="#" class="navbar-brand">LinkCare Health Services</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navmenu">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a href="/src/specialty.html" class="nav-link">Specialty</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/src/medication.html" class="nav-link">Medication</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/src/symptom.html" class="nav-link">Symptom</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/src/service.html" class="nav-link">Service</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/src/life_situation.html" class="nav-link">Life situation</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/src/login.html" class="nav-link d-flex"><i class="bi-person pe-2"></i>Login</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-
-        <!-- Homepage-->
-    <!-- Homepage section -->
-    <section class="custom-section bg-image bg-cover text-center justify-content-center"
-        style="background-image: url('/images/bg2.png'); height: 100vh; background-position: center">
-        <div class="container-fluid d-flex align-items-center pt-1">
-            <div class="card text-center mx-auto mt-0">
-                <div class="card-body m-lg-5">
-                    <h2 class="card-title">Explore Affordable Healthcare Services</h2>
-                    <p class="card-text">Doctor Appointments Starting from just $29</p>
-                    <p class="card-text">Discover the most affordable prices for top-tier healthcare professionals. Schedule
-                        an appointment easily.</p>
-    
-                    <div class="input-group mb-3 p-3">
-                        <input type="text" class="form-control" placeholder="Search for healthcare services..."
-                            aria-label="Search" aria-describedby="button-addon2" />
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">
-                            <i class="bi bi-search"></i>
-                        </button>
-                    </div>
-    
-                    <p class="card-text mb-5">Search by symptom, service, doctor name, specialty, or medication...</p>
-                </div>
-                <button class="btn btn-danger mx-auto mb-3" style="width: 50%">I NEED TO SEE A DOCTOR URGENTLY</button>
-                <button class="btn btn-primary mx-auto mb-5" style="width: 50%">I NEED A PRESCRIPTION REFILL</button>
-            </div>
-        </div>
-    </section>
-
-
-        <!-- Speciality -->
-        <section class="bg-light py-5">
-            <div class="container">
-                <h2 class="text-center mb-4">Top-rated online doctors & specialists available now.</h2>
-                <p class="text-center mb-4">Choose from thousands of providers at everyday affordable prices. Book
-                    online today.
-                </p>
-
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title mb-3">TOP BOOKED</h3>
-                                <p class="card-text">Find our most popular doctors and specialists.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title mb-3">SPECIALTIES</h3>
-                                <p class="card-text">Explore a variety of medical specialties.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title mb-3">SYMPTOMS</h3>
-                                <p class="card-text">Get expert advice based on your symptoms.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row mt-4 text-center">
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Telehealth</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Video prescription refill</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">In-person doctor visit</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">UTI consult</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Add more service categories as needed -->
-                </div>
-            </div>
-        </section>
-
-        <!-- Doctors -->
-        <section class="mt-5">
-            <div class="container">
-                <h1 class="mb-4">Connect with our most able Doctors:</h1>
                 <div class="row">
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card doctor-card">
-                            <img src="images/D4.png" alt="Dr. John Doe" class="card-img-top img-fluid mb-3">
-                            <div class="card-body">
-                                <h4 class="card-title">Dr. Ben Carson</h4>
-                                <p class="card-text">Cardiologist</p>
-                            </div>
-                        </div>
+                    <div class="col-md-4">
+                        <h5>Contact Us</h5>
+                        <p>Email: info@linkcare.com</p>
+                        <p>Phone: +25411 479-5851</p>
                     </div>
 
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card doctor-card">
-                            <img src="images/D1.png" alt="Dr. Jane Smith" class="card-img-top img-fluid mb-3">
-                            <div class="card-body">
-                                <h4 class="card-title">Dr. Jane Smith</h4>
-                                <p class="card-text">Orthopedic Surgeon</p>
-                            </div>
-                        </div>
+                    <div class="col-md-4">
+                        <h5>Follow Us</h5>
+                        <a href="#" class="text-light text-decoration-none">Facebook</a><br>
+                        <a href="#" class="text-light text-decoration-none">Twitter</a><br>
+                        <a href="#" class="text-light text-decoration-none">Instagram</a>
                     </div>
 
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card doctor-card">
-                            <img src="images/D2.jpg" alt="Dr. Mike Joss" class="card-img-top img-fluid mb-3">
-                            <div class="card-body">
-                                <h4 class="card-title">Dr. Mike Joss</h4>
-                                <p class="card-text">Pediatrician</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card doctor-card">
-                            <img src="images/D3.jpg" alt="Dr. Sarah Dina" class="card-img-top img-fluid mb-3">
-                            <div class="card-body">
-                                <h4 class="card-title">Dr. Sarah Dina</h4>
-                                <p class="card-text">Dermatologist</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- Subscription section -->
-        <section class="bg-light py-5">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <h2 class="text-center mb-4">Sign up to save 20% on your first visit.</h2>
-                        <p class="text-center mb-4">Plus get access to exclusive sales and promotions.</p>
-
-                        <form>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="email"
-                                    placeholder="Enter your email address" required>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary">Sign Up</button>
-                        </form>
+                    <div class="col-md-4">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-decoration-none">Home</a></li>
+                            <li class="text-decoration-none"><a href="#" class="text-decoration-none">Services</a></li>
+                            <li><a href="#" class="text-decoration-none">Doctors</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Comments sections -->
-        <section class="py-5">
-            <div class="container d-block">
-                <h2 class="text-center mb-4">PATIENTS LOVE LINKCARE</h2>
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <blockquote class="blockquote">
-                            <p class="mb-0">The doctor I booked on Linkcare was so great! She asked lots of questions and
-                                listened
-                                carefully to me.</p>
-                            <footer class="blockquote-footer py-4">Andrea</footer>
-                        </blockquote>
-                    </div>
-
-                    <div class="col-md-6">
-                        <blockquote class="blockquote">
-                            <p class="mb-0">I don’t have insurance and couldn't risk paying hundreds for a bill. Knowing
-                                how
-                                much to pay upfront meant I could actually afford my doctor on Sesame.</p>
-                            <footer class="blockquote-footer py-4">Kat</footer>
-                        </blockquote>
-                    </div>
-                </div>
-
-                <div class="row mt-4">
-                    <div class="col-md-6">
-                        <blockquote class="blockquote">
-                            <p class="mb-0">The doctor showed up on time, listened to me, and didn’t make me wait. As
-                                someone
-                                without insurance, Linkcare was really great.</p>
-                            <footer class="blockquote-footer py-4">Dominic</footer>
-                        </blockquote>
-                    </div>
-
-                    <!-- Add more testimonials as needed -->
-                </div>
-            </div>
-        </section>
-
-<footer class="bg-dark text-light py-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h5>Contact Us</h5>
-                <p>Email: info@linkcare.com</p>
-                <p>Phone: +25411 479-5851</p>
-            </div>
-
-            <div class="col-md-4">
-                <h5>Follow Us</h5>
-                <a href="#" class="text-light">Facebook</a><br>
-                <a href="#" class="text-light">Twitter</a><br>
-                <a href="#" class="text-light">Instagram</a>
-            </div>
-
-            <div class="col-md-4">
-                <h5>Quick Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Doctors</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
+        </footer>
 
 
 
-        <!--Javascript Bundle  -->
+        <!-- Javascript Bundle 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
+            crossorigin="anonymous"></script> -->
+        
+        <!-- Custom JS -->
+
+        <script src="/main.js"></script>
+
+        <!-- Bootstrap JS and Popper.js -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
     </body>
 
 </html>
