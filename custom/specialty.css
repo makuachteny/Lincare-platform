@@ -1,0 +1,117 @@
+/* Specialty page custom CSS */
+
+body {
+    background-color: #F3E9F6;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.navbar {
+    background-color: white;
+    z-index: 1;
+    animation-name: navbar;
+    animation-duration: 0.8s;
+}
+
+@keyframes navbar {
+    from {
+        opacity: 0;
+        transform: translateY(-10%);
+
+    }
+}
+
+.navbar .navbar-brand {
+    font-weight: 900;
+}
+
+.navbar .navbar-nav nav-item a {
+    color: #FFFF;
+    text-transform: capitalize;
+    font-weight: 900;
+    letter-spacing: 1px;
+    position: relative;
+
+}
+
+.navbar navbar-nav nav-item a::before {
+    content: '';
+    position: absolute;
+    background-color: #FFFF;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    transition: 0.2s ease-in-out;
+}
+
+.navbar .navbar-nav nav-item a:hover::before {
+    width: 100%;
+}
+.hero .img-fluid {
+    height: 85vh;
+}
+
+#video {
+    border: 1px solid;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#video:hover .btn {
+    color: white;
+    background-color: black;
+}
+
+#in-person:hover .btn {
+    color: white;
+    background-color: black;
+}
+
+#in-person {
+    border: 1px solid;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Doctors section */
+#doctors-section .card{
+    box-shadow: 0 2px 4px;
+    cursor: pointer;
+}
+#doctors-section .card:hover {
+    box-shadow: 0 4px 8px;
+}
+
+#doctors-section .btn{
+    border: none;
+    border-radius: 0px;
+}
+
+#doctors-section .btn:hover {
+    color: white;
+}
+
+#doctors-section i {
+    border: 1px solid black;
+}
+
+/* Inclusion section */
+#inclusion-section {
+    background-color: whitesmoke;
+    padding: 2px;
+}
+
+/* Awareness section */
+#awareness .col {
+    cursor: pointer;
+}
+
+#awareness .col .card:hover {
+    background-color: #af65c5;
+    color: white;
+    transform: translateY(-2px);
+}
+
+#inclusion  button{
+    background-color: #af65c5;
+}

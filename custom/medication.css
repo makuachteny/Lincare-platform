@@ -1,4 +1,5 @@
-/* Custom css for the index module */
+/* Custom style for the medicine module */
+
 body {
     background-color: #F3E9F6;
     font-family: 'DM Sans', sans-serif;
@@ -10,20 +11,23 @@ body {
     animation-name: navbar;
     animation-duration: 0.8s;
 }
+
 @keyframes navbar {
     from {
         opacity: 0;
         transform: translateY(-10%);
-        
+
     }
 }
+
 .navbar .navbar-brand {
-  font-weight: 900;
+    font-weight: 900;
 }
+
 .navbar .navbar-nav nav-item a {
     color: #FFFF;
     text-transform: capitalize;
-    font-weight: 900px;
+    font-weight: 900;
     letter-spacing: 1px;
     position: relative;
 
@@ -39,51 +43,52 @@ body {
     left: 0;
     transition: 0.2s ease-in-out;
 }
+
 .navbar .navbar-nav nav-item a:hover::before {
     width: 100%;
 }
-.custom-section {
-    background-image: url('/images/bg2.png');
-    height: 100vh;
-    background-position: center;
+.hero-section .btn {
+    border-radius: 0;
+    border: 1px solid;
 }
 
-.custom-section .btn {
-    width: 50%
-}
-
-.advert {
-    background-color: #F3E9F6;
-}
-
-.dc {
-    float: left;
-}
-
-/* Specialty section */
-
-.services .card{
-    background-color: #F3E9F6;
-    cursor: pointer;
-}
-
-.services .card:hover {
-    background-color: #8b5ce3;
+.hero-section .btn:hover {
     color: white;
 }
 
-/* Doctor section */
-.doctors {
+.hero-section .img-fluid {
+    width: 800px;
+    height: 85vh;
+}
+
+/* Doctors section */
+#doctors-section .card {
+    box-shadow: 0 2px 4px;
+    border: none;
     cursor: pointer;
 }
-
-.doctors .card {
-    box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.1);
+#doctors-section .card:hover {
+    box-shadow: 0 4px 8px;
 }
-.doctors .card:hover {
-    box-shadow: 0 8px 16px rgba(8, 8, 8, 0.2);
+#doctors-section .img-fluid {
+    width: 100%;
+    height: 235px;
 }
 
-a::after {
-    transition: 60s;
+#doctors-section i {
+    color: black;
+}
+
+#doctors-section .btn {
+    border-radius: 0;
+    border: none;
+}
+
+#doctors-section .btn:hover {
+    color: white;
+}
+
+/* prescription section */
+#inclusion #prescription {
+    border: 1px solid;
 }

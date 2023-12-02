@@ -1,7 +1,7 @@
-/* Custom css for the index module */
+/* Custom style for the life situation module */
 body {
-    background-color: #F3E9F6;
     font-family: 'DM Sans', sans-serif;
+    background-color: #F3E9F6;
 }
 
 .navbar {
@@ -10,20 +10,23 @@ body {
     animation-name: navbar;
     animation-duration: 0.8s;
 }
+
 @keyframes navbar {
     from {
         opacity: 0;
         transform: translateY(-10%);
-        
+
     }
 }
+
 .navbar .navbar-brand {
-  font-weight: 900;
+    font-weight: 900;
 }
+
 .navbar .navbar-nav nav-item a {
     color: #FFFF;
     text-transform: capitalize;
-    font-weight: 900px;
+    font-weight: 900;
     letter-spacing: 1px;
     position: relative;
 
@@ -39,51 +42,61 @@ body {
     left: 0;
     transition: 0.2s ease-in-out;
 }
+
 .navbar .navbar-nav nav-item a:hover::before {
     width: 100%;
 }
-.custom-section {
-    background-image: url('/images/bg2.png');
-    height: 100vh;
-    background-position: center;
+
+#hero button {
+    border-radius: 0;
+    border: 1px solid;
 }
 
-.custom-section .btn {
-    width: 50%
-}
-
-.advert {
-    background-color: #F3E9F6;
-}
-
-.dc {
-    float: left;
-}
-
-/* Specialty section */
-
-.services .card{
-    background-color: #F3E9F6;
-    cursor: pointer;
-}
-
-.services .card:hover {
-    background-color: #8b5ce3;
+#hero button:hover {
     color: white;
 }
 
-/* Doctor section */
-.doctors {
+#hero .img-fluid {
+    width: 1600px;
+    border: none;
+}
+
+#hero .card {
+    border: none;
+}
+
+#advert {
+    background-color: #F3E9F6;
+    width: 500px;
     cursor: pointer;
 }
 
-.doctors .card {
-    box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.1);
-}
-.doctors .card:hover {
-    box-shadow: 0 8px 16px rgba(8, 8, 8, 0.2);
+#advert:hover {
+    color: white;
+    background-color: black;
 }
 
-a::after {
-    transition: 60s;
+/* Doctors section */
+#doctors .card {
+    box-shadow: 0 2px 4px;
+    cursor: pointer;
+    border: none;
+}
+
+#doctors .card:hover {
+    box-shadow: 0 4px 8px;
+}
+
+#doctors .btn {
+    border: none;
+    border-radius: 0px;
+}
+
+#doctors .btn:hover {
+    color: white;
+}
+
+#doctors img {
+    width: 800px;
+    max-height: 200px;
 }
