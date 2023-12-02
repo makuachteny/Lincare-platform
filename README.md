@@ -20,6 +20,8 @@ The Lincare Platform is a comprehensive health services platform designed to giv
 
 ## Getting Started
 
-To get started with the Lincare Platform, follow these steps:
+To get started with the Lincare Platform, follow these steps: 
+
+NB: I have only worked on the front-end; at this point you can only watch the link to my video because the backend is not yet integrated; I'll be working on it in the span of the time
 
 [link](#link)
