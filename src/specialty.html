@@ -10,8 +10,8 @@
             crossorigin="anonymous" />
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="style.css/" />
-        <title>LinkCare Platform</title>
+        <link rel="stylesheet" href="/custom/specialty.css" />
+        
 
         <!-- Bootstrap icons -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
@@ -22,19 +22,30 @@
         <link
             href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&family=Montserrat:wght@100&family=Roboto+Condensed:wght@100&display=swap"
             rel="stylesheet">
+
+            <!-- title -->
+
+        <title>LinkCare Platform - Specialty</title>
+
+        <!-- favicon -->
+        <link rel="icon" href="/images/favicon/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
     </head>
 
-    <body style="background-color: #F3E9F6;  font-family: 'DM Sans', sans-serif;">
+    <body>
         <!-- HEADER SECTION -->
         <header>
             <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg bg-primary navbar-dark fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
                 <div class="container">
                     <a href="/index.html" class="navbar-brand">LinkCare Health Services</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
+        
                     <div class="collapse navbar-collapse" id="navmenu">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
@@ -53,8 +64,7 @@
                                 <a href="/src/life_situation.html" class="nav-link">Life situation</a>
                             </li>
                             <li class="nav-item">
-                                <a href="/src/login.html" class="nav-link d-flex"><i
-                                        class="bi-person pe-2"></i>Login</a>
+                                <a href="/src/login.html" class="nav-link d-flex"><i class="bi-person pe-2"></i>Login</a>
                             </li>
                         </ul>
                     </div>
@@ -65,47 +75,51 @@
         <!-- MAIN SECTION -->
         <main class="container-fluid">
             <!-- Hero section -->
-            <section class="hero-section">
+            <section class="hero px-1">
                 <div class="container-fluid d-md-flex justify-content-between mt-5">
-                    <div class="card text-center flex-grow-1">
-                        <h1 class="card-title mt-5">
-                            Book the <span class="text-danger">best price</span>  urgent care appointments.
+                    <div class="card text-center flex-grow-1 px-4">
+                        <h1 class="card-title mt-5 fw-bold">
+                            Book the <span class="text-danger">best price</span> urgent care appointments.
                         </h1>
                         <div class="card-body">
-                            <p class="card-text">Pay direct save up to 60% on online urgent care with quality doctors
+                            <p class="card-text" id="video-apt">Pay direct save up to 60% on online urgent care with quality doctors
                                 and specialists available today.</p>
                             <div class="card-text
-                                bg-info d-flex justify-content-between text-center p-3">
-                                <div class="card-text fw-bold">Video urgent care</div>
-                                <button class="btn bg-light">BOOK ONLINE</button>
+                                bg-info d-flex justify-content-between text-center mt-5 p-2" id="video">
+                                <div class="card-text ">Video urgent care</div>
+                                <button class="btn ">BOOK ONLINE</button>
                             </div>
-                            <div class="card-text bg-info text-start justify-content-between d-flex mt-3 pt-2 px-3 py-0"
-                                style="width: 50%;">
-                                <p class="card-text">In-person urgent care $126</p>
-                                <i class="bi bi-chevron-right"></i>
+                            <div class="card-text bg-info text-start justify-content-between d-flex mt-4 p-2" id="in-person">
+                                <p class="card-text" >In-person urgent care $126</p>
+                                <button class="btn ">BOOK ONLINE</button>
                             </div>
+                            <div class="mt-5 pt-4">
+                            <p class="card-text"><span class="text-capitalize text-danger fw-bold">Save up to 60% </span>on consultations, tests, and care in Ethiopia. Viral tests available in select markets.
+                            No insurance needed.</p>
                         </div>
+                        </div>
+                        
                     </div>
                     <div class="img-fluid">
-                        <img src="/images/Edit3.webp" alt="specialty image" class="img-fluid"
-                            style="width: 800px; height: 100%;">
+                        <img src="/images/Edit3.webp" alt="specialty image" class="img-fluid">
                     </div>
                 </div>
-                <div class="card-body justify-content-center" style="background-color: #F3E9F6;">
+                <div class=" advert card-body justify-content-center ">
                     <p class="card-text text-center">
                         <i class="bi bi-trophy"></i> Named the Best Overall Telehealth by Healthline
                     </p>
                 </div>
+                
 
             </section>
         </main>
 
 
         <!-- Doctors -->
-        <section class="doctors-section">
-            <div class="container-fluid mx-3">
-                <P class="text"> 10 available doctors</P>
-                <h1 class="mb-4 fw-bold">Video urgent care</h1>
+        <section id="doctors-section">
+            <div class="container-fluid pt-4 px-4 pb-5 ">
+                <p class="text px-2">Available doctors</p>
+                <h1 class="mb-3 pt-3 fw-bold">Video urgent care</h1>
                 <P class="text">See a provider in minutes wit an affordable, easy, and convenient online doctor
                     appointment for patients in Ethiopia</P>
 
@@ -116,8 +130,8 @@
                             <img src="/images/D4.png" alt="Dr. John Doe" class="card-img-top img-fluid mb-3">
                             <div class="card-body">
                                 <h4 class="card-title">Dr. Ben Carson <button class="btn"><i
-                                            class="bi-camera-video bg-primary px-2"
-                                            style="border: 1px solid black;"></i></button></h4>
+                                            class="bi-camera-video  px-2"
+                                            ></i></button></h4>
                                 <p class="card-text">Cardiologist</p>
                                 <hr>
                                 <div class="row-2-cols-3 ">
@@ -149,7 +163,9 @@
                         <div class="card doctor-card">
                             <img src="/images/D1.png" alt="Dr. Jane Smith" class="card-img-top img-fluid mb-3">
                             <div class="card-body">
-                                <h4 class="card-title">Dr. Jane Smith <button class="btn"><i class="bi-camera-video bg-primary px-2" style="border: 1px solid black;"></i></button></h4>
+                                <h4 class="card-title">Dr. Jane Smith <button class="btn"><i
+                                            class="bi-camera-video px-2"
+                                            ></i></button></h4>
                                 <p class="card-text">Orthopedic Surgeon</p>
                                 <hr>
                                 <div class="row-2-cols-3 ">
@@ -181,7 +197,9 @@
                         <div class="card doctor-card">
                             <img src="/images/D2.jpg" alt="Dr. Mike Joss" class="card-img-top img-fluid mb-3">
                             <div class="card-body">
-                                <h4 class="card-title">Dr. Mike Joss <button class="btn"><i class="bi-camera-video bg-primary px-2" style="border: 1px solid black;"></i></button>
+                                <h4 class="card-title">Dr. Mike Joss <button class="btn"><i
+                                            class="bi-camera-video px-2"
+                                            ></i></button>
                                 </h4>
                                 <p class="card-text">Pediatrician</p>
                                 <hr>
@@ -214,7 +232,9 @@
                         <div class="card doctor-card">
                             <img src="/images/D3.jpg" alt="Dr. Sarah Dina" class="card-img-top img-fluid mb-3">
                             <div class="card-body">
-                                <h4 class="card-title">Dr. Sarah Dina <button class="btn"><i class="bi-camera-video bg-primary px-2" style="border: 1px solid black;"></i></button></h4>
+                                <h4 class="card-title">Dr. Sarah Dina <button class="btn"><i
+                                            class="bi-camera-video px-2"
+                                            ></i></button></h4>
                                 <p class="card-text">Dermatologist</p>
                                 <hr>
                                 <div class="row-2-cols-3  justify-content-evenly">
@@ -247,110 +267,119 @@
         </section>
 
         <!-- Inclusion section -->
-        <section class="inclusion-section">
-            <div class="container-fluid d-block row mt-4 mx-1">
-                <h1 class="title fs-5">The following inclusions and exclusions apply:</h1>
+<section id="inclusion-section">
+    <div class="container mt-5 pb-5 mx-4">
+        <h1 class="title fs-2 text-start pb-4 fw-bold">The following inclusions and exclusions apply:</h1>
 
-                <p class="text"> <i class="bi-check"></i>Face-to-face conversation with provider</p>
-                <p class="text"> <i class="bi-check"></i>Prescription if recommended with local pickup or delivery</p>
-                <p class="text"> <i class="bi-check"></i>Good for urgent or routine care</p>
-                <p class="text"> <i class="bi-check"></i>Referral for labs, imaging, or specialists</p>
-                <p class="text"> <i class="bi-check"></i>Excludes orders from labs outside the country</p>
-                <p class="text"> <i class="bi-x">Avoid talking without proof</i></p>
-                <p class="text"> <i class="bi-x">Workers comp paperwork</i></p>
-                <p class="text"> <i class="bi-x">Controlled substance prescription</i></p>
+        <div class="row">
+            <div class="col-md-4">
+                <p class="text"><i class="bi-check"></i> Face-to-face conversation with provider</p>
+                <p class="text"><i class="bi-check"></i> Prescription if recommended with local pickup or delivery</p>
+                <p class="text"><i class="bi-check"></i> Good for urgent or routine care</p>
             </div>
+            <div class="col-md-4">
+                <p class="text"><i class="bi-check"></i> Referral for labs, imaging, or specialists</p>
+                <p class="text"><i class="bi-check"></i> Excludes orders from labs outside the country</p>
+                <p class="text pt-4"><i class="bi-check"></i> Every minutes counts for you!</p>
             </div>
-        </section>
-
-        <!-- Awareness section -->
-        <section class="more-section mb-5">
-        <div class="container mt-5">
-            <h2 class="text-start mb-4 fw-bold">MORE LINKCARE SERVICES</h2>
-        
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <!-- Online Doctor Prescriptions -->
-                <div class="col">
-                    <div class="card bg-transparent">
-                        <div class="card-body">
-                            <h5 class="card-title">Online Doctor Prescriptions</h5>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Mental Health Near Me -->
-                <div class="col">
-                    <div class="card bg-transparent">
-                        <div class="card-body">
-                            <h5 class="card-title">Mental Health Near Me</h5>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Quest Diagnostics Labs & Bloodwork Near Me -->
-                <div class="col">
-                    <div class="card bg-transparent">
-                        <div class="card-body">
-                            <h5 class="card-title">Quest Diagnostics Labs & Bloodwork Near Me</h5>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Urgent Care Appointments -->
-                <div class="col">
-                    <div class="card bg-transparent">
-                        <div class="card-body">
-                            <h5 class="card-title">Urgent Care Appointments</h5>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Labs & Bloodwork Near Me -->
-                <div class="col">
-                    <div class="card bg-transparent">
-                        <div class="card-body">
-                            <h5 class="card-title">Labs & Bloodwork Near Me</h5>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Imaging Center Near Me -->
-                <div class="col">
-                    <div class="card bg-transparent">
-                        <div class="card-body">
-                            <h5 class="card-title">Imaging Center Near Me</h5>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Sexual Health Clinic Near Me -->
-                <div class="col">
-                    <div class="card bg-transparent">
-                        <div class="card-body">
-                            <h5 class="card-title">Sexual Health Clinic Near Me</h5>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Men's Doctor Near Me -->
-                <div class="col">
-                    <div class="card bg-transparent">
-                        <div class="card-body">
-                            <h5 class="card-title">Men's Doctor Near Me</h5>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Weight Loss Doctor Near Me -->
-                <div class="col">
-                    <div class="card bg-transparent">
-                        <div class="card-body">
-                            <h5 class="card-title">Weight Loss Doctor Near Me</h5>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-4">
+                <p class="text"><i class="bi-x"></i> Avoid talking without proof</p>
+                <p class="text"><i class="bi-x"></i> Workers comp paperwork</p>
+                <p class="text pt-4"><i class="bi-x"></i> Controlled substance prescription</p>
             </div>
         </div>
+    </div>
+</section>
+
+
+        <!-- Awareness section -->
+        <section id="awareness">
+            <div class="container my-5 mx-4 ">
+                <h2 class="text-start mb-4 fw-bold">MORE LINKCARE SERVICES</h2>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+                    <!-- Online Doctor Prescriptions -->
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Online Doctor Prescriptions</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mental Health Near Me -->
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Mental Health Near Me</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quest Diagnostics Labs & Bloodwork Near Me -->
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"> Diagnostics Labs & Bloodwork Near Me</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Urgent Care Appointments -->
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Urgent Care Appointments</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Labs & Bloodwork Near Me -->
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Labs & Bloodwork Near Me</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imaging Center Near Me -->
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Imaging Center Near Me</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sexual Health Clinic Near Me -->
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Sexual Health Clinic Near Me</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Men's Doctor Near Me -->
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Men's Doctor Near Me</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Weight Loss Doctor Near Me -->
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Weight Loss Doctor Near Me</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </section>
         </main>
@@ -390,6 +419,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script> -->
+            
+        <!-- Custom JS -->
+        <script src="/main.js"></script>
 
         <!-- Bootstrap JS and Popper.js -->
 
