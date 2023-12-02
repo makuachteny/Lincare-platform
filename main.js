@@ -10,7 +10,7 @@ function performAction() {
   console.log("Action performed successfully!");
 }
 
-// Smooth Scrolling for anchors 
+// Smooth Scrolling for anchors
 const smoothScrollAnchors = document.querySelectorAll('a[href^="#"]');
 smoothScrollAnchors.forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
@@ -18,13 +18,14 @@ smoothScrollAnchors.forEach((anchor) => {
 
     const targetElement = document.querySelector(this.getAttribute("href"));
 
+    // Use setTimeout for a smooth scroll delay
     setTimeout(() => {
       targetElement.scrollIntoView({
         behavior: "smooth",
       });
     }, 1000);
+  });
 });
-
 
 // Active Navigation Highlight
 document.addEventListener("DOMContentLoaded", function () {
@@ -38,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const sectionTop = section.offsetTop;
       const sectionHeight = section.clientHeight;
 
+      // Highlight the section in the navigation when it comes into view
       if (this.pageYOffset >= sectionTop - sectionHeight / 3) {
         currentSection = section.getAttribute("id");
       }
@@ -59,13 +61,35 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", function () {
     const scrollThreshold = 50;
     if (window.scrollY > scrollThreshold) {
-      navbar.classList.add("bg-primary");
-      navbar.classList.add("text-white");
+      // Add both classes for background and text color
+      navbar.classList.add("bg-primary", "text-white");
     } else {
-      navbar.classList.remove("bg-primary");
+      // Remove both classes if the scroll position is not beyond the threshold
+      navbar.classList.remove("bg-primary", "text-white");
     }
   });
 });
+
+// Advertisment display function
+document.addEventListener("DOMContentLoaded", function () {
+  var advertContainer = document.getElementById("advertContainer");
+  var paragraphs = document.querySelectorAll(".advert .card-text");
+
+  var index = 0;
+
+  function displayNextParagraph() {
+    // Set opacity to 0 for fading out the current paragraph
+    paragraphs[index].style.opacity = 0;
+    index = (index + 1) % paragraphs.length;
+    paragraphs[index].style.opacity = 2;
+  }
+
+  setInterval(displayNextParagraph, 1500);
+});
+
+
+
+
 
 // Form Validation
 document.addEventListener("DOMContentLoaded", function () {
