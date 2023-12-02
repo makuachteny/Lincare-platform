@@ -55,6 +55,13 @@ body {
 .advert {
     background-color: #F3E9F6;
 }
+.advert .card-text {
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.advert .slideUp {
+    transform: translateY(-100%);
+}
 
 .dc {
     float: left;
