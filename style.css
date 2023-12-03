@@ -68,15 +68,15 @@ body {
 }
 
 /* Specialty section */
-
 .services .card{
-    background-color: #F3E9F6;
+    /* background-color: #407DAC; */
     cursor: pointer;
 }
 
 .services .card:hover {
-    background-color: #8b5ce3;
+    background-color: #999999;
     color: white;
+    font-weight: bold;
 }
 
 /* Doctor section */
