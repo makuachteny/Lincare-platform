@@ -1,7 +1,6 @@
 /* Custom style for the life situation module */
 body {
     font-family: 'DM Sans', sans-serif;
-    background-color: #F3E9F6;
 }
 
 .navbar {
@@ -46,6 +45,9 @@ body {
 .navbar .navbar-nav nav-item a:hover::before {
     width: 100%;
 }
+/* #hero {
+    width: 100%;
+} */
 
 #hero button {
     border-radius: 0;
@@ -58,7 +60,9 @@ body {
 
 #hero .img-fluid {
     width: 1600px;
+    height: 528px;
     border: none;
+    padding: 0;
 }
 
 #hero .card {
@@ -67,13 +71,38 @@ body {
 
 #advert {
     background-color: #F3E9F6;
-    width: 500px;
+    width: 100%;
     cursor: pointer;
 }
 
 #advert:hover {
     color: white;
     background-color: black;
+}
+#acne {
+    /* background-color: #FFFF; */
+    /* border: 1px solid; */
+    box-shadow: 0 2px 4px;
+    padding: 20px;
+    width: 100%;
+    margin: 0px;
+    transition: border-color 0.5s ease;
+}
+
+#acne h2 {
+    font-weight: 1000;
+}
+
+/* Doctors section */
+#doctor-section {
+    background-color: #F3E9F6;
+    padding-top: 10px;
+}
+#doctors{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 100px;
+    background-color: #FFFF;
 }
 
 /* Doctors section */
