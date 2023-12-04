@@ -75,8 +75,29 @@ body {
     color: white;
     background-color: black;
 }
+/* About Acne */
+#acne {
+    background-color: #FFFF;
+    /* border: 1px solid; */
+    padding: 20px;
+    width: 100%;
+    margin: 0px;
+    transition: border-color 0.5s ease;
+}
 
+#acne h2 {
+font-weight: 1000;}
 /* Doctors section */
+#doctors{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 100px;
+    background-color: #FFFF;
+}
+
+#doctors h1 {
+    font-weight: 1000;
+}
 #doctors .card {
     box-shadow: 0 2px 4px;
     cursor: pointer;
